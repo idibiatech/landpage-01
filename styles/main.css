@@ -115,13 +115,16 @@ section div {
 		text-align: center;
 		padding: 8rem 4rem;
 	}
+	.left {
+		font-size: 16px;
+	}
 }
 @media screen and (min-width: 1000px) {
 	section {
 		height: 100vh;
 		display: flex;
 		flex-direction: row;
-		padding: 4rem 4rem;
+		padding: 4rem 4rem !important;
 		display: none;
 	}
 	.sec-1 {
@@ -142,6 +145,7 @@ section div {
 		text-align: right;
 		font-size: 20px;
 		line-height: 3rem;
+		padding: 0rem 6rem;
 	}
 	/* li:hover {
 		color: white;
