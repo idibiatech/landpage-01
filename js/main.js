@@ -6,6 +6,17 @@ let mobileAnim = gsap.matchMedia();
 let pcAnim = gsap.matchMedia();
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".location", {
+	scrollTrigger: {
+		trigger: ".locations",
+		start: "top 80%",
+	},
+	y: -100,
+	opacity: 0,
+	duration: 1,
+	stagger: 1,
+	ease: "power3.out",
+});
 mobileAnim.add("(max-width: 1000px)", () => {
 	let pageLoad = gsap.timeline();
 	pageLoad.to(".logo", {
@@ -77,16 +88,4 @@ pcAnim.add("(min-width: 1001px)", () => {
 		duration: 0.4,
 		stagger: 0.4,
 	});
-});
-
-gsap.from(".location", {
-	scrollTrigger: {
-		trigger: ".locations",
-		start: "top 80%",
-	},
-	y: -100,
-	opacity: 0,
-	duration: 4,
-	stagger: 1,
-	// ease: "power3.out",
 });

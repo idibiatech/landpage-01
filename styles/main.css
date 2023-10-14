@@ -8,6 +8,7 @@ li,
 a {
 	list-style: none;
 	text-decoration: none;
+	cursor: pointer;
 }
 header {
 	height: 100vh;
@@ -50,6 +51,7 @@ header {
 	background-color: black;
 	color: white;
 	transition: all ease 0.3s;
+	border-radius: 24px;
 }
 section {
 	height: 100vh;
@@ -96,6 +98,8 @@ section div {
 	backdrop-filter: blur(10px);
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	border-radius: 24px;
+	height: auto;
+	padding: 10rem 2rem;
 }
 .logo {
 	position: absolute;
@@ -133,6 +137,7 @@ section div {
 	}
 	.left {
 		border-radius: 24px 0 0 24px;
+		height: 100%;
 	}
 	/* li:hover {
 		color: white;
