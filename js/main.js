@@ -1,7 +1,10 @@
-gsap.registerPlugin(ScrollTrigger);
+// window.onload = function () {
+
+// };
 
 let mobileAnim = gsap.matchMedia();
 let pcAnim = gsap.matchMedia();
+gsap.registerPlugin(ScrollTrigger);
 
 mobileAnim.add("(max-width: 1000px)", () => {
 	let pageLoad = gsap.timeline();
@@ -18,7 +21,6 @@ mobileAnim.add("(max-width: 1000px)", () => {
 				sections.forEach((section) => {
 					section.style.display = "flex";
 				});
-				console.log(sections);
 			}, 1000);
 		},
 	});
@@ -28,7 +30,19 @@ mobileAnim.add("(max-width: 1000px)", () => {
 		repeat: -1,
 		duration: 1,
 	});
+
+	gsap.from("p", {
+		scrollTrigger: {
+			trigger: ".sec-1",
+			start: "top center",
+		},
+		x: "100%",
+		duration: 0.4,
+		stagger: 0.4,
+		ease: "power3.out",
+	});
 });
+// let sec = gsap.timeline();
 pcAnim.add("(min-width: 1001px)", () => {
 	let pageLoad = gsap.timeline();
 	pageLoad.to(".logo", {
@@ -44,7 +58,6 @@ pcAnim.add("(min-width: 1001px)", () => {
 				sections.forEach((section) => {
 					section.style.display = "flex";
 				});
-				console.log(sections);
 			}, 1000);
 		},
 	});
@@ -54,4 +67,26 @@ pcAnim.add("(min-width: 1001px)", () => {
 		repeat: -1,
 		duration: 1,
 	});
+
+	gsap.from("p", {
+		scrollTrigger: {
+			trigger: ".sec-1",
+			start: "top center",
+		},
+		y: 100,
+		duration: 0.4,
+		stagger: 0.4,
+	});
+});
+
+gsap.from(".location", {
+	scrollTrigger: {
+		trigger: ".locations",
+		start: "top 80%",
+	},
+	y: -100,
+	opacity: 0,
+	duration: 4,
+	stagger: 1,
+	// ease: "power3.out",
 });
