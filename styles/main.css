@@ -33,7 +33,7 @@ header {
 	z-index: 3;
 	width: 8rem;
 	position: absolute;
-	bottom: 3rem;
+	bottom: 6rem;
 	display: flex;
 	justify-content: center;
 	align-self: center;
