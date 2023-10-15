@@ -19,13 +19,15 @@ gsap.from(".location", {
 });
 mobileAnim.add("(max-width: 1000px)", () => {
 	let pageLoad = gsap.timeline();
-	pageLoad.to(".logo", {
+	pageLoad.to(".logo-img", {
 		scale: 1,
-		duration: 0.4,
+		duration: 1,
+		ease: "back.out(1.7)",
 	});
-	pageLoad.to(".logo", {
+	pageLoad.to(".logo-img", {
 		delay: 0.3,
 		y: -70,
+		ease: "power4.out",
 		onComplete: function () {
 			setTimeout(function () {
 				const sections = document.querySelectorAll("section");
@@ -56,13 +58,15 @@ mobileAnim.add("(max-width: 1000px)", () => {
 // let sec = gsap.timeline();
 pcAnim.add("(min-width: 1001px)", () => {
 	let pageLoad = gsap.timeline();
-	pageLoad.to(".logo", {
+	pageLoad.to(".logo-img", {
 		scale: 1,
-		duration: 0.4,
+		duration: 1,
+		ease: "back.out(1.7)",
 	});
-	pageLoad.to(".logo", {
+	pageLoad.to(".logo-img", {
 		delay: 0.3,
-		y: -70,
+		y: -100,
+		ease: "power4.out",
 		onComplete: function () {
 			setTimeout(function () {
 				const sections = document.querySelectorAll("section");

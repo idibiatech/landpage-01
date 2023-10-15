@@ -27,6 +27,21 @@ header {
 
 .logo {
 	color: white;
+
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+	position: relative;
+	/* position: absolute;
+	right: 50%; */
+}
+
+.logo img {
+	position: absolute;
+	right: 75%;
+	width: 50%;
 	scale: 0;
 }
 .location-container {
@@ -118,6 +133,10 @@ section div {
 	.left {
 		font-size: 16px;
 	}
+	.logo img {
+		width: 30%;
+		right: 80%;
+	}
 }
 @media screen and (min-width: 1000px) {
 	section {
@@ -146,6 +165,11 @@ section div {
 		font-size: 20px;
 		line-height: 3rem;
 		padding: 0rem 6rem;
+	}
+	.logo img {
+		position: absolute;
+		right: 85%;
+		width: 30%;
 	}
 	/* li:hover {
 		color: white;
