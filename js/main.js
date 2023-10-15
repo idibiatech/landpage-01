@@ -42,6 +42,7 @@ mobileAnim.add("(max-width: 1000px)", () => {
 		opacity: 1,
 		repeat: -1,
 		duration: 1,
+		ease: "back.out(1.7)",
 	});
 
 	gsap.from("p", {
@@ -49,10 +50,10 @@ mobileAnim.add("(max-width: 1000px)", () => {
 			trigger: ".sec-1",
 			start: "top center",
 		},
-		x: "100%",
+		x: "110%",
 		duration: 0.4,
 		stagger: 0.4,
-		ease: "power3.out",
+		ease: "back.out(1.7)",
 	});
 });
 // let sec = gsap.timeline();
@@ -81,6 +82,7 @@ pcAnim.add("(min-width: 1001px)", () => {
 		opacity: 1,
 		repeat: -1,
 		duration: 1,
+		ease: "back.out(1.7)",
 	});
 
 	gsap.from("p", {
@@ -91,5 +93,6 @@ pcAnim.add("(min-width: 1001px)", () => {
 		y: 100,
 		duration: 0.4,
 		stagger: 0.4,
+		ease: "back.out(1.7)",
 	});
 });
