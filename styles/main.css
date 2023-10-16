@@ -123,7 +123,13 @@ section div {
 	position: absolute;
 	left: 50%;
 }
-
+.locations {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
 .location-container {
 	display: flex;
 	flex-direction: column;
@@ -148,6 +154,13 @@ section div {
 		flex-direction: row;
 		padding: 4rem 4rem !important;
 		display: none;
+	}
+	.locations {
+		display: flex;
+		flex-direction: row;
+		width: 40%;
+		justify-content: space-between;
+		margin-top: 1rem;
 	}
 	.sec-1 {
 		background-color: black;
