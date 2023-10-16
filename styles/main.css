@@ -12,7 +12,8 @@ a {
 }
 header {
 	height: 100vh;
-	background-color: black;
+	background-color: #001800;
+
 	position: relative;
 }
 .wrapper {
@@ -32,7 +33,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: red;
+
 	position: relative;
 	/* position: absolute;
 	right: 50%; */
@@ -44,6 +45,7 @@ header {
 	width: 50%;
 	scale: 0;
 }
+
 .location-container {
 	transition: all ease 0.3s;
 	outline: 1 solid black;
@@ -90,7 +92,7 @@ section div {
 }
 .sec-1 {
 	background-color: black;
-	background-image: url("../images/back.jpg");
+	background-image: url("../images/africabg-01.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -121,6 +123,7 @@ section div {
 	position: absolute;
 	left: 50%;
 }
+
 .location-container {
 	display: flex;
 	flex-direction: column;
